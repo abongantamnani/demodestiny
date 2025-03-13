@@ -1,0 +1,304 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destiny Dream Design</title>
+    <meta name="description" content="Destiny Dream Design specializes in creating custom stages, furniture, and sets for TV shows and major events in South Africa.">
+    <meta name="color-theme" content="#4e54c8">
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Exo', sans-serif;
+        background-color: #1c1c1c; /* Dark background for the body */
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      .context {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .context h1 {
+        font-size: 60px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      .context p {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      .area {
+        background: #2a2d5b;
+        background: -webkit-linear-gradient(to left, #535aa2, #2a2d5b);
+        background: linear-gradient(to left, #535aa2, #2a2d5b);
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .circles li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.3);
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+      }
+
+      .circles li:nth-child(1) {
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(2) {
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+      }
+
+      .circles li:nth-child(3) {
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+      }
+
+      .circles li:nth-child(4) {
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+      }
+
+      .circles li:nth-child(5) {
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(6) {
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+      }
+
+      .circles li:nth-child(7) {
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+      }
+
+      .circles li:nth-child(8) {
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+      }
+
+      .circles li:nth-child(9) {
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+      }
+
+      .circles li:nth-child(10) {
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+          border-radius: 0;
+        }
+
+        100% {
+          transform: translateY(-1000px) rotate(720deg);
+          opacity: 0;
+          border-radius: 50%;
+        }
+      }
+
+      section {
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #bbb;
+      }
+
+      .services {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .service-card {
+        background-color: #333;
+        border-radius: 8px;
+        padding: 20px;
+        width: 250px;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .contact {
+        background-color: #222;
+        padding: 60px 20px;
+        color: #fff;
+      }
+
+      .contact h2 {
+        font-size: 40px;
+      }
+
+      .contact p {
+        font-size: 18px;
+        margin: 20px 0;
+      }
+
+      /* Button Styling */
+      .view-work-btn {
+        display: inline-flex;
+        align-items: center;
+        background-color: #4e54c8;
+        padding: 15px 30px;
+        color: #fff;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .view-work-btn:hover {
+        background-color: #3c3f8f;
+      }
+
+      .view-work-btn .mouse-icon {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="context">
+        <h1>Destiny Dream Design</h1>
+        <p>Custom Stages, Furniture & Sets for TV Shows and Major Events</p>
+      </div>
+    </div>
+
+    <!-- About Section with Button -->
+    <section>
+      <h2>About Us</h2>
+      <p>Destiny Dreams Design is one of South Africa's largest stage design and event production companies. We are experienced in creating custom stages, furniture, and sets for high-profile TV shows and events.</p>
+      <a href="gallary.html" class="view-work-btn">
+        VIEW OUR WORK
+        <span class="mouse-icon">🖱️</span>
+      </a>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Custom Stages</h3>
+          <p>We create stunning custom stages for TV shows, concerts, and corporate events.</p>
+        </div>
+        <div class="service-card">
+          <h3>Custom Furniture</h3>
+          <p>Our team designs unique furniture pieces tailored to fit any theme or style.</p>
+        </div>
+        <div class="service-card">
+          <h3>Set Design</h3>
+          <p>From concept to completion, we build beautiful and functional sets for the entertainment industry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>If you're interested in working with us or have any questions, feel free to reach out!</p>
+      <p>Email: alvinmichael76@gmail.com 
+    </p>
+      <p>Phone: 0762135307
+    </p>
+    </section>
+
+  </body>
+</html>
